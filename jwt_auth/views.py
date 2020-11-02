@@ -43,7 +43,7 @@ class LoginView(APIView):
         try:
             user = User.objects.get(email=email)
 
-            if not user.check_passowrd(password):
+            if not user.check_password(password):
                 raise PermissionDenied({{'message': 'invalid credentials'}})
 
             dt = datetime.now() + timedelta(days=7)
