@@ -91,3 +91,4 @@ db.sqlite3
 
 ## Secrets ##
 secrets.py
+secret_settings.py
